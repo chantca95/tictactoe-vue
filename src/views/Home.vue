@@ -6,8 +6,6 @@
     <div class="column-group">
       <Gameboard v-if="gameHasStarted" ></Gameboard>
       <div @mousedown="startGame" v-else id="start-button">Start</div>      
-      <div v-if="gameHasStarted" @mousedown="startGame" id="restart-button">Restart</div>
-
     </div>
   </div>
   </div>
@@ -38,7 +36,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 h3 {
   margin: 40px 0 0;
 }
